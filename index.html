@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favi.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link rel="stylesheet" type="text/css" href="/dist/css/main.css" />
+    <title>Brazos Prototype</title>
+    <style>
+        img {  max-width: 100% }
+    </style>
+<link rel="stylesheet" href="https://use.typekit.net/rkp0jpd.css">
+
+</head>
+
+<body>
+  <div class="hero">
+    <div class="ball yellow">
+    </div>
+  
+    <div class="ball maroon">
+    </div>
+  
+    <div class="noise">
+    </div>
+  
+    <div class="video-wrapper">
+      <video autoplay loop src="https://ak.picdn.net/shutterstock/videos/1048253998/preview/stock-footage-modern-factory-team-of-engineers-and-scientists-in-clean-sterile-coveralls-work-on-desktop.mp4">
+  </video>
+    </div>
+    
+    <div class="text-parent">
+      <div class="text">
+        Building a next <br>Generation<br>Community
+      </div>
+    </div>
+    
+    <div class="gradient-yellow"></div>
+    
+    <nav>
+      <div class="logo">
+        <img src="https://i.imgur.com/iF9K3rS.png"/>
+      </div>
+    </nav>
+    
+  </div>
+
+<script>
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1200);
+            return false;
+          }
+        }
+      });
+</script>
+    <script src="dist/js/scripts.js"></script>
+    <script src="dist/js/jquery-3.3.1.js"></script>
+    <script src="dist/js/wow.min.js"></script>    
+    <script>
+        new WOW().init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}ol,ul{list-style:none}sup{vertical-align:text-top}sub{vertical-align:text-bottom}body{background-color:#fff;color:#333}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;padding:0;margin:0}body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}table{font-size:inherit;font:100%}th{font-style:normal;font-weight:normal;text-align:left}code{font-family:monospace;*font-size:108%;line-height:100%}input,textarea,select,option,optgroup{font-family:arial,helvetica,clean,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}em{font-style:italic;font-weight:normal}strong{font-style:normal;font-weight:bold}.left{float:left}.right{float:right}.clear{clear:both}.clearabove{line-height:0;height:0;font-size:0;clear:both}.clearcontents{overflow:hidden;zoom:1;word-wrap:break-word}.relative{position:relative}.absolute{position:absolute}.none{display:none}.hidden{visibility:hidden}a{text-decoration:none}a:link{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:none}a:active{text-decoration:none}
+body {
+  background: #edf0f2;
+  margin: 0;
+  }
+  
+*{
+  box-sizing: border-box;
+}
+
+  img {
+    width: 100%;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #103a93;
+  }
+  
+  .text-parent {
+   position: absolute;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+  }
+  
+  
+  .text {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    font-size: 60px;
+    z-index: 4;
+
+    @media screen and (min-width: 1830px) {
+      font-size: 66px;
+    }
+
+
+  }
+  
+  .video-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 55vw;
+    background: pink;
+    background-image: url("https://i.imgur.com/Afh8jVH.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 3;
+  }
+  
+  video {
+    height: 100vh;
+  }
+  
+  
+  .noise {
+    background-image: url("https://i.imgur.com/SpWUkSP.png");
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vw;
+    opacity: .55;
+  }
+  
+  .ball {
+      border-radius: 50%;
+    
+    &.yellow {
+      position: absolute;
+      background: #fcda00;
+      width: 30%;
+      height: 0;
+      padding-bottom: 30%;
+      animation: move-yellow 15s linear infinite;
+      filter: blur(80px);
+      z-index: 2;
+      opacity: .6;
+    }
+      
+    &.maroon {
+      position: absolute;
+      background: #5a0025;
+      width: 75%;
+      height: 0;
+      padding-bottom: 75%;
+      animation: move-maroon 15s linear infinite;
+      filter: blur(100px);
+      opacity: 1;
+    }
+  
+  }
+  
+  .gradient-yellow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    left: 0;
+    background: linear-gradient(90deg, rgba(252,218,0,0) 25%, rgba(252,218,0,.9) 75%);
+    z-index: 100;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.61) 10%, rgba(0,0,0,0.15) 62%);
+    z-index: 100;
+    padding: 0 60px;
+  }
+  
+  .logo {
+    width: 352px;
+    padding-top: 26px;
+  }
+  
+  
+  @keyframes move-yellow {
+    0%   { 
+      transform: translateY(10%) translateX(150%);
+    }
+    50% { 
+      transform: translateY(5%) translateX(110%);
+    }
+     100%   { 
+      transform: translateY(10%) translateX(150%);
+    }
+  }
+  
+  
+  
+  @keyframes move-maroon {
+    0%   { 
+      transform: translateY(25%) translateX(0%);
+    }
+    50% { 
+      transform: translateY(5%) translateX(-20%);
+    }
+     100%   { 
+      transform: translateY(25%) translateX(0%);
+    }
+  }
+  
